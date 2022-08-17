@@ -4,13 +4,13 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image alt="Example image" src="~/favicon.png" width="135" />
 
-    <h1>Hello, world!</h1>
+    <h1 class="text-3xl font-bold underline">Hello, world!</h1>
 
-    <p>
+    <p class="text-2xl bg-red-100">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
     </p>
 
-    <h2>Manual</h2>
+    <h2 class="bg-green-500">Manual</h2>
     <ul>
       <li><g-link to="/blog-html/blog-post-one">Blog ost One</g-link></li>
       <li><g-link to="/blog-html/blog-post-two">Blog Post Two</g-link></li>
@@ -25,7 +25,7 @@
       </li>
     </ul>
 
-    <h2>Reddit /r/aww Api</h2>
+    <h2 class="bg-red-500">Reddit /r/aww Api</h2>
     <ul>
       <li v-for="post in $page.redditPosts.edges" :key="post.id">
         <g-link :to="post.node.path">

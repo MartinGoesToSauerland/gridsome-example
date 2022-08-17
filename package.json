@@ -2,6 +2,7 @@
   "name": "gridsome-example",
   "private": true,
   "scripts": {
+    "prod": "NODE_ENV=production && npx tailwindcss -i ./app.css -o ./src/app.css && npm run build", 
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
@@ -11,5 +12,8 @@
     "@gridsome/transformer-remark": "^0.6.4",
     "axios": "^0.27.2",
     "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
   }
 }
